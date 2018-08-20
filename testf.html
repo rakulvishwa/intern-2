@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="nav.css">
+<style>
+body {
+    margin: 0;
+}
+
+hr {
+display: block; 
+    
+	border-color:black;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 0em;
+    margin-right: -2em;
+    border-style: inset;
+    border-width: 1px;
+}
+div.fixed {
+    position: fixed;
+	left:0;
+	bottom:10;
+    right: 00;
+    width: 200px;
+	}
+
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 14%;
+	color: white;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+div.static {
+	position: fixed;
+	top: 0px;
+	left: 105px;
+}
+
+li a {
+    display: block;
+    color: white;
+	 font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: Grey;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+div.realative {
+    position: realative;
+    top: 0;
+    left: 0;
+    width: 103px;
+	height: 100%;
+    background-color: black;
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 25%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 25%;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+div.c {
+	position: fixed;
+	top: -10px;
+    left: 315px;
+	width: 100%;
+	height: 100%;
+
+}
+.container {
+    border: 1px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+	width: 30%;
+    padding: 2px;
+    margin: 10px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 40px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+.container img.right1 {
+    float: right;
+	margin-top: 10px;
+    margin-left: 20px;
+    margin-right:0;
+}
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+input[type=text], select {
+    width: 65%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+div.d {
+	position: fixed;
+	top: -10px;
+    left: 685px;
+	width: 98%;
+
+}
+
+div.e {
+	position: fixed;
+	top: -10px;
+    left: 560px;
+	width: 100%;
+	height: 100%;
+
+}
+</style>
+</head>
+<body>
+<div class="fixed">
+<ul>
+	      <br>
+          <li><a href="#" class="WhatsApp">
+		  <img src="w.png" alt="WhatsApp" width="70" height="60"></a></li>
+          <li><a href="#" class="Gmail">
+		   <img src="g.png" alt="Gmail" width="70" height="70"></a></li>
+          <li><a href="#" class="Instagram">
+		  <img src="i.png" alt="Instagram" width="70" height="70"></a></li>
+          <li><a href="#" class="Twitter">
+		  <img src="t.png" alt="Twitter" width="70" height="70"></a></li>
+		  <li><a href="#" class="Add">
+		  <img src="a.png" alt="Add" width="70" height="70"></a></li>
+        </ul>
+		</div>
+		<div class="static">	
+<ol>
+  <li><a class="active" href="#home">All</a></li>
+  <li><a href="#news">Messages</a></li>
+  <li><a href="#contact">Unread</a></li>
+  <li><a href="#about">Important</a></li>
+  <hr>
+  <li><a href="#home">Teams</a></li>
+  <li><a href="#news">Groups</a></li>
+  <li><a href="#contact">Channels</a></li>
+  <li><a href="#about">Locations</a></li>
+  <li><a href="#news">Media</a></li>
+  <hr>
+  <li><a href="#contact">Help</a></li>
+  <li><a href="#about">Settings</a></li>
+
+</ol>
+  </div>
+  <div class="c">
+  <h2>Search</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="3.html">Navin</a></li>
+  <li><a href="#">Rakul</a></li>
+  <li><a href="#">Priya</a></li>
+  <li><a href="#">Ramesh</a></li>
+</ul>
+</div>
+
+<div class="d">
+<h2>Rakul is typing...</h2>
+
+<div class="container">
+  <img src="cr.jpg" alt="Avatar" style="width:100%;">
+  <p>Hi. How are you free today?</p>
+  <span class="time-right">11:00</span>
+</div>
+
+<div class="container darker">
+  <img src="car.jpg" alt="Avatar" class="right" style="width:100%;">
+  <p>Hey! I'm free.</p>
+  <span class="time-left">11:01</span>
+</div>
+
+<div class="container">
+  <img src="cr.jpg" alt="Avatar" style="width:100%;">
+  <p>Shall we go to turf today?</p>
+  <span class="time-right">11:02</span>
+</div>
+
+<div class="container darker">
+  <img src="car.jpg" alt="Avatar" class="right" style="width:100%;">
+  <p>Yea for sure..lemme call my brother.</p>
+  <span class="time-left">11:05</span>
+</div>
+
+<div class="container darker1">
+  <img src="car.jpg" alt="Avatar" class="right" style="width:100%;">
+  <p>Great..lets have some fun.</p>
+  <span class="time-left">11:05</span>
+</div><br><br><br><br>
+<div class="container darker1">
+  <img src="send.png" alt="Avatar" class="right1" style="width:100%;">
+  <img src="smile.png" alt="Avatar" class="right1" style="width:100%;">
+  <input type="text" placeholder="Type your meaasage...">
+  </div>
+  <div class="e">
+<h2 style="text-align:center">User Profile</h2>
+<div class="card">
+  <img src="icon.png" style="width:100%">
+  <h1>R.S.Dravid</h1>
+  <p class="thick">Nickname:	The WALL</p>
+          <p class="thick">Mobile No:	9876543210</p>
+          <p class="thick">Date Of Birth:	11-01-1973</p>
+          <p class="thick">Gender:	Male</p><br>
+		  </div></div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+	</body>
+
+</html>
